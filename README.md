@@ -31,6 +31,8 @@ An intelligent agent system designed to answer questions about engine manuals an
 - [Limitations and Future Improvements 🔮](#limitations-and-future-improvements-)
   - [Current Limitations](#current-limitations)
   - [Future Improvements](#future-improvements)
+- [License 📄](#license-)
+- [Created With ❤️](#created-with-)
 
 ## Architecture 🏗️
 
@@ -216,6 +218,7 @@ For a production-ready application, additional verification mechanisms would be 
 - **Retrieval Effectiveness**: Implement metrics to evaluate retrieval performance such as recall@k and precision@k against human-labeled ground truth
 - **Completeness Evaluation**: Add automated checks to verify that all relevant information from source documents is included in responses
 - **Answer Quality Monitoring**: Implement systematic evaluation of final responses through sampling and human review or automated metrics comparing responses to source material
+- **RAG Evaluation Framework**: Incorporate libraries like RAGAS to measure the effectiveness of the RAG system from different perspectives (faithfulness, answer relevancy, context relevancy, etc.)
 
 These verification mechanisms would ensure the reliability and accuracy of the entire pipeline, especially for critical technical documentation where precision is paramount.
 
@@ -296,7 +299,7 @@ While this agent provides a solid foundation for document-based question answeri
 - **Limited Context Window**: The agent may struggle with very large documents due to LLM context window limitations.
 - **Single Query Language**: Currently optimized for English queries and documents.
 - **Basic Error Recovery**: While the agent has error handling, it lacks sophisticated recovery mechanisms for certain edge cases.
-- **Limited Multimedia Understanding**: Cannot process or reason about images, diagrams, or tables within documents.
+- **Limited Multimedia Understanding**: Cannot process or reason about images and diagrams within documents. Tables are supported through Docling's advanced document parsing capabilities, but complex visual elements remain a challenge.
 
 ### Future Improvements
 
@@ -309,3 +312,13 @@ While this agent provides a solid foundation for document-based question answeri
 - **Conversation Memory**: Improve handling of follow-up questions with better conversation context retention.
 
 By addressing these limitations, the agent could evolve into a more robust and versatile system for technical documentation assistance. 
+
+## License 📄
+
+This project is licensed under the MIT License
+
+## Created With ❤️
+
+This project was created with passion by Michał Kurkowski.
+
+Feel free to reach out with questions, improvements, or collaboration ideas! 
